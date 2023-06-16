@@ -1,0 +1,48 @@
+# Regular expressions
+
+
+import re
+exp1 = "Hi hello good morinig"
+res1 = re.search("^Hi",exp1)
+print(res1)
+
+
+
+exp2 = "Hi hello good morining,hello world"
+res2 = re.findall("hello",exp2)
+print(res2)
+
+
+
+exp3 = "Hi all good morning,hello"
+res3 = re.findall("[a-p]",exp3)
+print(res3)
+
+
+
+exp4 = "hello 1047 good morinig 89,"
+res4 = re.findall("\d",exp4)
+print(res4)
+
+
+
+exp5 = "hi all,good morning"
+res5 = re.findall("g..d",exp5)
+print(res5)
+
+
+
+exp6 = "Hi good morning"
+res6 = re.findall("morning$",exp6)
+print(res6)
+
+
+
+exp7 = "Hi hello all good morinig"
+res7 = re.findall("he.*o", exp7)
+print(res7)
+
+
+exp8 = "Hi all hello good morning"
+res8 = re.findall("\s",exp8)
+print(res8)
